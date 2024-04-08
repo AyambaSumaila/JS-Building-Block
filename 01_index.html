@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Blur image</title>
+    <style>
+      body {
+        margin: 20px;
+        img {margin: 20px;}
+      }
+    </style>
+    
+     <script>
+      window.onload = init;
+
+      function init() {
+        var image = document.getElementById("zero");
+        image.onclick = showAnswer;
+      }
+
+      function showAnswer() {
+        var image = document.getElementById("zero");
+        image.src = "images/zero.jpg";
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Guess Image</h1>
+    <img id="zero" src="images/zero.jpg" />
+
+  
+  </body>
+</html>
